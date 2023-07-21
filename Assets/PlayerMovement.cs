@@ -29,7 +29,7 @@ public class NewBehaviourScript : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector2(moveX, moveY);  // todo come back
+        moveDirection = new Vector2(moveX, moveY).normalized;  // todo come back
     }
 
     void Move (){
