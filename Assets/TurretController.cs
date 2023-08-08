@@ -23,7 +23,7 @@ public class TurretController : MonoBehaviour
         transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
     }
 
-    private void Shoot()
+    public void Shoot()
     {
         // Instantiate a bullet
         GameObject bullet = Instantiate(bulletPrefab, barrel.position, barrel.rotation);
